@@ -22,15 +22,15 @@
 *                                                                             *
 * Contact information: contact@sofa-framework.org                             *
 ******************************************************************************/
-#ifndef INITSIXENSE_HYDRA_H
-#define INITSIXENSE_HYDRA_H
+#ifndef SIXENSEHYDRA_CONFIG_H
+#define SIXENSEHYDRA_CONFIG_H
 
 #include <sofa/helper/system/config.h>
 
 #ifdef SOFA_BUILD_SIXENSE_HYDRA
-#define SOFA_SIXENSE_HYDRA_API SOFA_EXPORT_DYNAMIC_LIBRARY
+#  define SOFA_SIXENSE_HYDRA_API SOFA_EXPORT_DYNAMIC_LIBRARY
 #else
-#define SOFA_SIXENSE_HYDRA_API SOFA_IMPORT_DYNAMIC_LIBRARY
+#  define SOFA_SIXENSE_HYDRA_API SOFA_IMPORT_DYNAMIC_LIBRARY
 #endif
 
-#endif // INITSIXENSE_HYDRA_H
+#endif
